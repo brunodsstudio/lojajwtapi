@@ -1,0 +1,626 @@
+{
+	"info": {
+		"_postman_id": "58572bc2-1efd-40fb-a9b8-91f951c267be",
+		"name": "Loja Jwt Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mostra Lojas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/lojas",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lojas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona Lojas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/addLoja?nome=nomedaloja",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addLoja"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "nomedaloja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Loja",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/delLoja?nome=nomedaloja",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delLoja"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "nomedaloja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edita Loja",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/updateLoja?loja_id=0&nome=novoNomedaloja",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateLoja"
+					],
+					"query": [
+						{
+							"key": "loja_id",
+							"value": "0"
+						},
+						{
+							"key": "nome",
+							"value": "novoNomedaloja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostra Departamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/deptos",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona Departamentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/addDeptos?nome=Cozinha&loja_id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addDeptos"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Cozinha"
+						},
+						{
+							"key": "loja_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Departamento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/delDepto?nome=Delete",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delDepto"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Delete"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edita Departamento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/updateDepto?nome=Cozinha e jantar&departamento_id=5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateDepto"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Cozinha e jantar"
+						},
+						{
+							"key": "departamento_id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostra Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/Produto",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostra Produto/Loja",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api/Produto?filter=loja&busca_id=2&tpp=10",
+					"path": [
+						"api",
+						"Produto"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "loja"
+						},
+						{
+							"key": "busca_id",
+							"value": "2"
+						},
+						{
+							"key": "tpp",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostra Produto/Departamento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/Produto?filter=departamento&busca_id=2&tpp=10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Produto"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "departamento"
+						},
+						{
+							"key": "busca_id",
+							"value": "2"
+						},
+						{
+							"key": "tpp",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostra Produto/ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/Produto?filter=produto&busca_id=1&tpp=10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"Produto"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "produto"
+						},
+						{
+							"key": "busca_id",
+							"value": "1"
+						},
+						{
+							"key": "tpp",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/addDProduto?nome=meia&preco=10.50&imagem=/imagens/meia.jpg&loja_id=2&departamento_id=4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addDProduto"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "meia"
+						},
+						{
+							"key": "preco",
+							"value": "10.50"
+						},
+						{
+							"key": "imagem",
+							"value": "/imagens/meia.jpg"
+						},
+						{
+							"key": "loja_id",
+							"value": "2"
+						},
+						{
+							"key": "departamento_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/delProduto?id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delProduto"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edita Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/updateProduto?nome=meia soquete&preco=9&imagem=/imagens/meiasoquete.jpg&id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateProduto"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "meia soquete"
+						},
+						{
+							"key": "preco",
+							"value": "9"
+						},
+						{
+							"key": "imagem",
+							"value": "/imagens/meiasoquete.jpg"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "System register",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/auth/register?name=Nome&email=seuemail@xyz.com.br&password=admin123&password_confirmation=admin123",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nome"
+						},
+						{
+							"key": "email",
+							"value": "seuemail@xyz.com.br"
+						},
+						{
+							"key": "password",
+							"value": "admin123"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "admin123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "System Login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/auth/login?email=seuemail@xyz.com.br&password=admin123 ",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "seuemail@xyz.com.br"
+						},
+						{
+							"key": "password",
+							"value": "admin123 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "System User_profile",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/auth/user-profile",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"user-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "System  refresh",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/auth/refresh",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "System Logout",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/auth/logout",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
