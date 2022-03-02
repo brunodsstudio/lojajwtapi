@@ -23,7 +23,13 @@ class LojaController extends Controller
     }
 
     public function deleteLoja(Request $request){
+
+       /* $idLoja = DB::select(
+                    DB::raw("select loja_id where nome like '%". $request->nome ."%'"));*/
+
         $res=Loja::where('nome', 'LIKE', "%{$request->nome}%")->delete();
+
+
         if($res){
             return response()->json(["message" => 'loja excluida com sucesso'], 201);  
         }else{

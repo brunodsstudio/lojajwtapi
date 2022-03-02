@@ -28,8 +28,8 @@ https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-a
 //----------------------------------------------------------------------  
 <h3>AUTH JWT</h3>  
   
-[POST]	/api/auth/register  
-[POST]	/api/auth/login  
+[POST]	/api/auth/register?name=Nome&email=seuemail@xyz.com.br&password=admin123&password_confirmation  
+[POST]	/api/auth/login?email=seuemail@xyz.com.br&password=admin123
 [GET]	/api/auth/user-profile  
 [POST]	/api/auth/refresh  
 [POST]	/api/auth/logout  
